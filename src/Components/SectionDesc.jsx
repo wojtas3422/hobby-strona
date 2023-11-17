@@ -22,7 +22,7 @@ export default function SectionDesc(props) {
 
 
     return (
-        <div ref={scope} className="grid grid-half h-full pb-20">
+        <div ref={scope} className="grid grid-half h-[80%]">
             <div className="grid-centered opacity-0">
                 <p className="text-2xl w-3/4">{props.title}</p>
             </div>
