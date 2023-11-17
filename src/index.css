@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "DM Mono";
+    src: url(/fonts/JetBrainsMono-VariableFont_wght.ttf);
+}
+
+html,
+body {
+    overflow: hidden;
+    background-color: #292929;
+    color: white;
+    font-family: 'DM Mono';
+}
+
+.snap-y-scroll {
+    scroll-snap-type: y mandatory;
+}
+
+.grid-half {
+    grid-template-columns: 50% 50%;
+}
+
+.grid-centered {
+    display: grid;
+    place-items: center;
+}
+
+.flash {
+    animation: flash 300ms ease-in-out;
+}
+
+@keyframes flash {
+    0% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: initial;
+    }
+}
