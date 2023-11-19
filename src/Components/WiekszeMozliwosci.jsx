@@ -26,11 +26,11 @@ export default function WiekszeMozliwosci() {
     }, [isInView])
 
     return (
-        <div ref={scope} className="grid grid-half h-full pb-20">
+        <div ref={scope} className="grid grid-sect h-full pb-20">
             <div className="flex justify-center items-center flex-col gap-y-12">
-                <p className="text-2xl w-3/4">Sam HTML, CSS i JS jest wystarczający do zrobienia prostych aplikacji przeglądarkowych. Za to jak potrzebujemy większą aplikacje, sam JavaScript robi się pomieszany i trudny do utrzymania. Na rozwiązanie temu stworzono “Frameworki”.</p>
+                <p className="md:text-2xl w-3/4">Sam HTML, CSS i JS jest wystarczający do zrobienia prostych aplikacji przeglądarkowych. Za to jak potrzebujemy większą aplikacje, sam JavaScript robi się pomieszany i trudny do utrzymania. Na rozwiązanie temu stworzono “Frameworki”.</p>
             </div>
-            <div className="flex justify-center flex-wrap items-center gap-x-20 pr-8 pb-20">
+            <div className="hidden md:flex justify-center flex-wrap items-center gap-x-20 pr-8 pb-20">
                 <img src={svelte} alt="" className={`h-2/6`} />
                 <img src={vue} alt="" className={`h-2/6`} />
             </div>

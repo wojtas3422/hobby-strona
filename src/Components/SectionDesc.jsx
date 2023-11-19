@@ -22,11 +22,11 @@ export default function SectionDesc(props) {
 
 
     return (
-        <div ref={scope} className="grid grid-half h-[80%]">
+        <div ref={scope} className="grid grid-sect h-[80%]">
             <div className="grid-centered opacity-0">
-                <p className="text-2xl w-3/4">{props.title}</p>
+                <p className="md:text-2xl w-3/4">{props.title}</p>
             </div>
-            <div className="grid-centered pr-8">
+            <div className="grid-centered pr-8 !hidden text-center md:!grid">
                 <img src={props.img} alt={props.imgAlt} className={`${props.bigImg ? 'h-3/4' : 'h-2/4'} ${props.smImg ? "!h-1/4" : ""} object-cover`} />
             </div>
         </div>

@@ -28,6 +28,20 @@ body {
     grid-template-columns: 50% 50%;
 }
 
+.grid-full {
+    grid-template-columns: 1fr;
+}
+
+.grid-sect {
+    grid-template-columns: 50% 50%;
+}
+
+@media (max-width: 768px) {
+    .grid-sect {
+        grid-template-columns: 1fr;
+    }
+}
+
 .grid-centered {
     display: grid;
     place-items: center;
@@ -45,6 +59,27 @@ body {
     font-family: Inter;
     font-weight: 700;
 }
+
+
+.hero-name {
+    animation: cursorFlash 1s infinite;
+}
+
+@keyframes cursorFlash {
+    0% {
+        border-right: 3px solid #98C379;
+    }
+
+    50% {
+        border-right: 3px solid transparent;
+    }
+
+    100% {
+        border-right: 3px solid #98C379;
+    }
+}
+
+
 
 @keyframes flash {
     0% {
