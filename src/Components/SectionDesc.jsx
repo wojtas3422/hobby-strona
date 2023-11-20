@@ -27,7 +27,7 @@ export default function SectionDesc(props) {
                 <p className="md:text-2xl w-3/4">{props.title}</p>
             </div>
             <div className="grid-centered pr-8 !hidden text-center md:!grid">
-                <img src={props.img} alt={props.imgAlt} className={`${props.bigImg ? 'h-3/4' : 'h-2/4'} ${props.smImg ? "!h-1/4" : ""} object-cover`} />
+                <img src={props.img} alt={props.imgAlt} className={`${props.bigImg ? 'h-3/4' : 'h-2/4'} ${props.smImg ? "!h-1/4" : ""} object-contain`} />
             </div>
         </div>
     )
